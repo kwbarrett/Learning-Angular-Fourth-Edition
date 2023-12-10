@@ -20,8 +20,7 @@ export class ProductListComponent implements AfterViewInit {
   }
 
   ngOnInit(): void{
-    // this.products = this.productService.getProducts();
-    console.log( this.productService.getProducts() )
+    this.products = this.productService.getProducts();
   }
 
   ngAfterViewInit(): void {
