@@ -1,10 +1,12 @@
 import { Component, Input, Output, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
 import { Product } from '../product';
+import { ProductsService } from '../products.service';
 
 @Component({
   selector: 'app-product-detail',
   templateUrl: './product-detail.component.html',
-  styleUrls: ['./product-detail.component.css']
+  styleUrls: ['./product-detail.component.css'],
+  providers: [ ProductsService ]
 })
 export class ProductDetailComponent implements OnChanges {
 
